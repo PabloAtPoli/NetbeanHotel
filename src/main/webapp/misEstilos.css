@@ -1,0 +1,56 @@
+/* Elancho y alto de todas las etiquetas
+   abarca el relleno y el borde */
+
+*{
+    box-sizing: border-box;
+}
+
+/* Aplica el tipo de letra Lucida Sans a las etiquetas de la página y si no está instalado este font,
+   se aplica sans-serif */
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+h1{
+    font-size:3.0vw; /* Hace responsive, al 3.0% del ancho del viewport, el tipo de letra del h1  */
+}
+
+header{
+    background-color: #9933cc;
+    color: #ffffff; /* color de la letra blanco */
+    padding: 15px;
+}
+
+/* Pone a flotar a la derecha los hipervínculos de login y regístrese */
+#loginLogoutRegistrese{
+    float: right;
+}
+
+/* Los hipervínculos que estan dentro de la etiqueta header les pone el mismo color de letra
+definido para el header */
+header a{
+    color: inherit;
+}
+
+/* Quita las viñetas a la lista no ordenada del menú*/
+nav ul {
+    /*    list-style-type: none;*/
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 8px;  /* Rellena con 8 pixels arriba, abajo, a la izquierda y a la derecha */
+    margin-bottom: 7px;  /* Fija la margen de abajo de cada elemento en 7 pixels */
+    background-color: #33b5e5; /* Fija el color del fondo en azul */
+    color: #ffffff;  /* Fija el color de la letra en blanco */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  /* agrega una sombra a cada item */
+}
+
+/* Cuando se pasa el puntero del mouse por sobre una elemento de la
+   lista del menú, su color de fondo cambia  a azul más oscuro */
+nav li:hover {
+    background-color: #0099cc;
+}
+
+
