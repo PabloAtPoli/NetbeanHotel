@@ -25,6 +25,9 @@ header{
 #loginLogoutRegistrese{
     float: right;
 }
+#loginLogoutRegistrese a{
+    margin: 0px 8px 0px 8px;
+}
 
 /* Los hipervínculos que estan dentro de la etiqueta header les pone el mismo color de letra
 definido para el header */
